@@ -1,0 +1,61 @@
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Benny Benassi</title>
+</head>
+<body background="j5.jpg" class="body">
+	<h1 align="center"><font color="white" size="25px">Benny Benassi</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text3" width="350">Genuri muzicale</td>
+			<td class="text3" width="350">Ocupatie</td>
+			<td class="text3" width="350">Instrumente</td>
+		</tr>
+		<tr height="auto">
+			<td class="text3" width="350">EDM, house,electro house, progressive house microhouse</td>
+			<td class="text3" width="350">DJ, producator de inregistrari, remixer</td>
+			<td class="text3" width="350">Clape, sintetizator</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Marco "Benny" Benassi (născut la 13 iulie 1967) este un DJ italian, producător de discuri și remixer. El este cel mai bine cunoscut pentru succesul din 2002, "Satisfaction", văzut ca precursor al electro-house-ului, care a adus-o în mainstream.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Și-a început cariera în calitate de membru al duo-ului Benassi Bros. electronica, a cărui piesă "Illusion" a devenit foarte populară în scena clubului american, atingând în cele din urmă numărul 4 pe Hot Dance Club Play; după "Hit My Heart". În 2003, Benassi a lansat primul său album de debut solo, Hypnotica, care a câștigat premiul European Border Breakers Award. În 2008, el a câștigat, de asemenea, Premiul Grammy pentru cel mai bun remix înregistrat la Premiile 50 de Grammy (Enemy's Public Bring the Noise).</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Un localnic din Milano și crescut în Reggio Emilia, DJ și producătorul Benassi, a început să colaboreze cu vărul Alle Benassi la sfârșitul anilor 1980 în orașul lor natal, înainte de a se muta la studio-ul de producție Off Limits, la mijlocul anilor '90, inclusiv Whigfield, JK și Ally & Jo. În 2001, Benassi, sub numele KMC, a lansat prima sa lovitură "I Feel So Fine", cu voce de Dhany. Piesa a urcat pe primul loc în topul italienilor din Italia Benassi și a devenit în curând un hit în clasamentele din Marea Britanie.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Mergând de la house la electro, "Satisfaction" a avut succes la nivel mondial, cu un an mai târziu, DJ-i de înaltă calitate, precum Carl Cox, Darren Emerson și Roger Sanchez oferindu-i laude. Piesa a ajuns pe locul 2 in UK Singles Chart, dupa ce compania de inregistrari a inlocuit filmul original , cu un clip video al modelelor care folosesc scule electrice.</font></p>
+	</div>
+		<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Benny_Benassi">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="benny1.jpg">
+	<img class="mySlides" src="benny2.jpg">
+	<img class="mySlides" src="benny3.jpg">
+	<img class="mySlides" src="benny4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+			var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+	</body>
+	</html>

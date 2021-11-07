@@ -1,0 +1,61 @@
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Bob Marley</title>
+</head>
+<body background="m15.jpg" class="body">
+	<h1 align="center"><font color="white" size="25px">Bob Marley</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text3" width="350">Genuri muzicale</td>
+			<td class="text3" width="350">Ocupatie</td>
+			<td class="text3" width="350">Instrumente</td>
+		</tr>
+		<tr height="auto">
+			<td class="text3" width="350">Reggae, ska, Rocksteady</td>
+			<td class="text3" width="350">Solist, compozitor, muzician</td>
+			<td class="text3" width="350">Vocal, chitara, percutie</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Robert Nesta "Bob" Marley (n. 6 februarie 1945, Jamaica - d. 11 mai 1981, Miami, SUA) a fost un cantautor jamaican, muzician și chitarist care a dobândit faimă și recunoștință internațională, combinând în mare parte reggae, ska și rocksteady în compozițiile sale. Începând în 1963 cu grupul The Wailers, a inițiat o compoziție și un stil vocal distinctiv care mai târziu va rezona cu audiențe în toată lumea. The Wailers vor lansa unele dintre primele înregistrări reggae cu producătorul Lee "Scratch" Perry.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  După ce The Wailers s-au despărțit în 1974, Marley a urmat o carieră solo, odată cu mutarea lui în Anglia, care a culminat cu lansarea albumului Exodus în 1977, care i-a stabilit reputația în întreaga lume și i-a produs statutul ca fiind unul dintre artiștii cu cele mai mari vânzări din toate timpurile, cu vânzări de peste 75 de milioane de înregistrări. Exodus a stat în topurile britanice pentru cincizeci și șase de săptămâni consecutive. Acesta includea patru hit single-uri în Marea Britanie: "Exodus", "Waiting in Vain", "Jamming" și "One Love". În 1978 a lansat albumul Kaya, care a inclus hit single-urile "Is This Love" și "Satisfy My Soul".</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Diagnosticat cu un tip de melanom malign în 1977, Marley a murit pe 11 mai 1981, în Miami, la vârsta de 36 de ani. El a fost un practicant Rastafari care s-a inspirat în muzica lui cu un sens de spiritualitate. Este considerat unul dintre cei mai influenți muzicieni din toate timpurile și creditat cu popularizarea muzicii reggae în întreaga lume, fiind și un simbol al culturii și identității jamaicane. Marley a evoluat de asemenea într-un simbol global, care a fost comercializat la nesfârșit printr-o varietate de medii.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Bob Marley s-a născut în micul sat Nine Mile în Saint Ann Parish din Jamaica sub numele de Nesta Robert Marley. Mama sa era de culoare, iar tatăl alb. În 1962, Marley înregistrează primele două single-uri "Judge Not" și "One Cup of Coffee", cu producătorul Leslie Kong. Aceste cântece, lansate de casa de discuri Beverley's sub pseudonimul Bobby Martell, au atras puțină atenție. Cântecele au fost relansate postum în „Songs of Freedom”.</font></p>
+	</div>
+		<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Bob_Marley">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="bob1.jpg">
+	<img class="mySlides" src="bob2.jpg">
+	<img class="mySlides" src="bob3.jpg">
+	<img class="mySlides" src="bob4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+			var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+	</body>
+	</html>

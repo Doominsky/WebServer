@@ -1,0 +1,292 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  width: auto;
+  border-bottom: 3px solid #1020a0;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+  background: #000000;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 2;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  background: #1020a0;
+}
+.table
+	{
+		margin-top: 35px;
+		border-collapse: collapse;
+		border-color: blue;
+	}
+.text3
+	{
+		font-size: 20px;
+		text-align: center;
+		background-color: #4f75f2;
+	}
+	
+.text5
+{
+		font-size: 20px;
+		text-align: center;
+		background-color: #c734cb;
+}
+.text6
+{
+		font-size: 20px;
+		text-align: center;
+		background-color: #25ab21;
+}
+.text7
+{
+		font-size: 20px;
+		text-align: center;
+		background-color: #cc0000;
+}
+.text8
+{
+		font-size: 20px;
+		text-align: center;
+		background-color: #00b8e6;
+}
+.text9
+{
+		font-size: 20px;
+		text-align: center;
+		background-color: #e6ac00;
+}
+
+.text4
+	{
+		font-size: 20px;
+		text-align: justify;
+		background-color: #4f75f2;
+	}
+#table2	
+	{
+		text-align:center;
+	}
+.logo
+	{
+		float:right;
+		width:30px;
+		height:30px;
+		padding:10px 10px;
+	}
+.foot
+	{
+		float:left;
+		font-family:arial;
+		font-size:15px;
+		margin-left:10px;
+		margin-top:10px;
+		color:cyan;
+	}
+.head3r
+{
+	float:center;
+	font-family:arial;
+	font-size:15px;
+	margin-top:10px;
+}
+	
+	
+	
+	
+.wrap {
+    width:100%;
+	height:100%;
+}
+.image 
+{
+    position: relative;
+    height: 100vh;
+}
+.image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+	height:100%;
+	width:100%;
+}
+.text {
+    color: cyan;
+    position: relative;
+}
+.table2
+{
+	margin-top:0px;
+}
+#table2
+{
+	margin-top:0px;
+}
+.body { 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #333;
+    width:480px;
+	height:auto;
+	padding:5px;
+	float:left;
+}
+
+div.gallery:hover {
+    border: 1px solid #fff;
+}
+
+div.gallery img {
+    width: 480px;
+    height:300px;
+	float:center;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+	color:cyan;
+}
+
+a:link {
+    color: orange;
+}
+
+
+a:visited {
+    color: limegreen;
+}
+
+
+a:hover {
+    color: white;
+}
+
+
+a:active {
+    color: red;
+}
+header
+{
+	margin-top:5px;
+}
+
+.mySlides
+{
+	width:480px;
+	height:300px;
+}
+
+.w3-button-w3-display-left
+{
+	margin-right:240px;
+}
+.w3-button-w3-display-right
+{
+	margin-left:240px;
+}
+.w3-content-w3-display-container
+{
+	display:container;
+}
+
+.back
+{
+	float:left;
+	margin-left:10px;
+	width:40px;
+	height:40px;
+}

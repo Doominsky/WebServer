@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Chic</title>
+<body background="m7.jpg" class="body">
+
+<h1 align="center"><font color="white" size="25px">Chic (band)</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text5" width="350">Origine</td>
+			<td class="text5" width="350">Membri</td>
+			<td class="text5" width="350">Ani de activitate</td>
+		</tr>
+		<tr height="auto">
+			<td class="text5" width="350">New York City, New York, SUA</td>
+			<td class="text5" width="350">Nile Rodgers,Jerry Barnes,Kimberly Davis,Folami,Ralph Rolle,Russell Graham,Richard Hilton,Bill Holloman,Curt Ramm</td>
+			<td class="text5" width="350">1976–1983, 1990–1992, 1996–prezent</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Chic, numit în prezent Nile Rodgers & Chic, este o trupă americană care a fost organizată în 1976 de chitaristul Nile Rodgers și basistul Bernard Edwards. A înregistrat multe cântece disco cu succes comercial, printre care "Dance, Dance, Dance (Yowsah, Yowsah, Yowsah)" (1977),"Everybody Dance" (1977), "Le Freak" (1978),"I Want Your Love" (1978),  și "My Forbidden Lover" (1979).Grupul se considera ca o formatie rock pentru miscarile disco "care au facut bine pe pace, dragoste si libertate hippie".</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Nile Rodgers și Bernard Edwards s-au întâlnit în 1970, în calitate de colegi de muzică din cadrul sesiunii care lucrau în zona New York City. Ei au format o trupa rock numita "The Boys" si mai tarziu "The Big Apple Band", care a jucat numeroase concerte in jurul orasului New York. În ciuda interesului pentru demo-ul lor, nu au obținut niciodată un contract de inregistrari.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Ei au fost mai târziu în trupa New York City, care a înregistrat un hit în 1973 cu "I'm Doing Fine Now" care a fost lansat în Marea Britanie. Inspirat după ce a participat la un concert al formației engleze glam rock Roxy Music, Rodgers a început să dezvolte ideea pentru un grup a cărui muzică și imagine să formeze un întreg imersiv. În 1977, Edwards și Rodgers au recrutat bateristul Tony Thompson, anterior cu LaBelle și Ecstasy, Passion, & Pain, pentru a se alătura grupului; au interpretat ca trio versiuni de cover, la diferite concerte.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; În contract cu compania Atlantic Records, în 1977 au lansat albumul de debut self-titled Chic, care a fost o extensie a benzii demonstrative. Dar Edwards și Rodgers au fost convinși că pentru a produce sunetul studioului de înregistrare al trupei atunci când interpreteaza live, au fost nevoiți să adauge o altă cântăreață. Wright a sugerat-o pe prietena ei, Luci Martin, care a devenit membru intre sfarsitul iernii si inceputul primaverii din 1978. Imediat dupa ce s-au incheiat sesiunile de debut, membrii trupei au inceput sa lucreze la albumul solo de debut al lui Wright, Norma Jean, Care include și cântecul de succes "Saturday"</font></p>
+	</div>
+	<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Chic_(band)">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="chic1.jpg">
+	<img class="mySlides" src="chic2.jpg">
+	<img class="mySlides" src="chic3.jpg">
+	<img class="mySlides" src="chic4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+</body>
+

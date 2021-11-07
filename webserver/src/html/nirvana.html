@@ -1,0 +1,62 @@
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Nirvana</title>
+</head>
+<body background="m22.jpg" class="body">
+<h1 align="center"><font color="white" size="25px">Nirvana</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text3" width="350">Origine</td>
+			<td class="text3" width="350">Ani de activitate</td>
+			<td class="text3" width="350">Membri</td>
+		</tr>
+		<tr height="auto">
+			<td class="text3" width="350">Aberdeen, Washington, SUA</td>
+			<td class="text3" width="350">1987–1994</td>
+			<td class="text3" width="350">Kurt Cobain (1987–1994),Krist Novoselic (1987–1994),Dave Grohl (1990–1994)</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Nirvana a fost o trupa de rock americana formata de cântărețul și chitaristul Kurt Cobain și basistul Krist Novoselic în Aberdeen, Washington, în 1987. Nirvana a trecut printr-o succesiune de tobosari, cea mai lunga activitate avand-o Dave Grohl, care s-a alăturat în 1990. În ciuda eliberării doar a trei albume de studio în cariera lor de șapte ani, Nirvana a ajuns să fie considerată una dintre cele mai influente și importante trupe alternative din istorie. Deși trupa sa dizolvat în 1994 după moartea lui Cobain, muzica lor menține o popularitate și continuă să influențeze cultura modernă a rock'n roll-ului.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; La sfârșitul anilor '80, Nirvana s-a stabilit ca parte a scenei grunge din Seattle, lansând primul său album, Bleach, pentru eticheta independentă Sub Pop în 1989. Ei au dezvoltat un sunet care s-a bazat pe contraste dinamice, adesea între versuri liniștite și coruri puternice. După ce a semnat la DGC Records, Nirvana a găsit un succes neașteptat cu "Smells Like Teen Spirit", primul single din cel de-al doilea album al formației Nevermind (1991). Succesul brusc al lui Nirvana a fost popularizat pe scară largă, iar Cobain s-a referit la mass-media drept "purtătorul de cuvânt al unei generații", iar Nirvana a fost considerată "trupa emblematică" a generației X. La aprecierea critică, a prezentat un sunet abraziv, mai puțin obișnuit și a provocat audiența grupului.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Cariera activă a lui Nirvana sa încheiat după moartea lui Cobain în 1994, dar au fost eliberate diverse emisiuni postumice, supravegheate de Novoselic, Grohl și văduva lui Cobain Courtney Love. De la debut, trupa a vandut peste 25 de milioane de inregistrari doar in Statele Unite si peste 75 de milioane de inregistrari la nivel mondial, facandu-le una dintre cele mai bine vandute trupe din toate timpurile. Nirvana a fost inaugurată în Sala Rock and Roll Hall of Fame în 2014, în primul său an de eligibilitate.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Cobain și Novoselic s-au întâlnit în timp ce au participat la Aberdeen High, deși nu au vorbit intre ei niciodată, conform lui Cobain. Perechea a devenit în cele din urmă prieteni, frecventând spațiul de practică al lui Melvins. Cobain a vrut să formeze o trupă cu Novoselic, dar Novoselic nu a răspuns pentru mult timp. Pentru a-1 convinge pe Novoselic sa creeze o trupa, Cobain ia dat o banda demo a proiectului Fecal Matter. Trei ani după ce cei doi s-au întâlnit, Novoselic l-a anunțat pe Cobain că a ascultat în cele din urmă demo-ul Fecal Matter și le-a propus să înceapă un grup. Perechea la recrutat pe tobosarul Bob McFadden, dar după o lună proiectul sa destrămat.</font></p>
+
+	</div>
+	<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Nirvana_(band)">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="nirvana1.jpg">
+	<img class="mySlides" src="nirvana2.jpg">
+	<img class="mySlides" src="nirvana3.jpg">
+	<img class="mySlides" src="nirvana4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+			var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+	</body>
+</html>

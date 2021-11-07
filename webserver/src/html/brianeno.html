@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Brian Eno</title>
+</head>
+<body background="m6.jpg" class="body">
+
+<h1 align="center"><font color="white" size="25px">Brian Eno</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text3" width="350">Genuri muzicale</td>
+			<td class="text3" width="350">Ocupatie</td>
+			<td class="text3" width="350">Instrumente</td>
+		</tr>
+		<tr height="auto">
+			<td class="text3" width="350">Ambient,Minimal,Art Rock,Electronică,Rock Experimental,Glam rock</td>
+			<td class="text3" width="350">Compozitor,Producător,Muzician,Artist</td>
+			<td class="text3" width="350">Pian,Sintetizator,Voce,Orgă,SaxofonChitară,Chitară bass</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Brian Peter George St. John le Baptiste de la Salle Eno (n. 15 mai 1948), mai cunoscut ca Brian Eno sau și mai simplu, Eno, este un muzician, compozitor, producător și cântăreț englez care, ca artist solo, este recunoscut ca fiind unul dintre principalii inovatori ai muzicii ambientale.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Eno a studiat la o școală de arte, fiind inspirat de picturile minimaliste, dar nu avea o prea mare experiență și educație muzicală când s-a alăturat trupei Roxy Music ca interpret la sintetizatoare și claviaturist, la începutul anilor '70. Succesul celor de la Roxy Music pe scena glam rock a venit repede, dar Eno se săturase de conflictele cu vocalistul Bryan Ferry și a părăsit formația după lansarea albumului For Your Pleasure (1973) începându-și cariera solo cu albumele de art rock Here Come The Warm Jets (1974) și Taking Tiger Mountain (by Strategy) (1974).</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Eno s-a extins și spre stiluri ale muzicii experimentale cu No Pussyfooting (1973), influentul Another Green World (1975) și Discreet Music (1975). Primele sale eforturi în muzica ambientală s-au materializat odată cu apariția albumelor Ambient 1/Music for Airports (1978) și, mai târziu, Apollo: Atmospheres and Soundtracks (1983) care a fost compus pentru filmul documentar For All Mankind.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Materialele solo ale lui Eno au fost foarte influente, fiind adevărate "pietre de hotar" în muzica ambientală și beneficiind de tehnici de producție inovatoare. Până la sfârșitul anilor '70, Eno lucrase cu David Bowie pe "Trilogia Berlinului", a ajutat la popularizarea grupului American de punk rock, Devo și a genului "No Wave" și începuse să colaboreze frecvent cu Harold Budd, John Cale, Cluster, Robert Fripp și David Byrne împreună cu care a produs influentul album My Life in The Bush of Ghosts (1981). A produs și a colaborat la trei albume Talking Heads printre care Remain in Light (1980), a produs șapte albume U2 incluzând The Joshua Tree (1987), colaborând și pe materiale ale unor artiști ca James, Laurie Anderson, Coldplay, Paul Simon, Grace Jones și Slowdive printre alții.</font></p>
+	</div>
+	<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Brian_Eno">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="brian1.jpg">
+	<img class="mySlides" src="brian2.jpg">
+	<img class="mySlides" src="brian3.jpg">
+	<img class="mySlides" src="brian4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+</body>
+</html>

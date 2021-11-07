@@ -1,0 +1,60 @@
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Miles Davis</title>
+</head>
+<body background="j1.jpg" class="body">
+	<h1 align="center"><font color="white" size="25px">Miles Davis</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text9" width="350">Genuri muzicale</td>
+			<td class="text9" width="350">Ocupatie</td>
+			<td class="text9" width="350">Instrumente</td>
+		</tr>
+		<tr height="auto">
+			<td class="text9" width="350">Jazz</td>
+			<td class="text9" width="350">Muzician, Compozitor, Lider de trupa</td>
+			<td class="text9" width="350">Trompeta</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Miles Dewey Davis, jr. a fost un trompetist și compozitor american de jazz, una din cele mai influente, inovatoare și originale personalități muzicale din istoria jazz-ului din secolul al XX-lea, pe drumul deschis de Buddy Bolden și continuat cu Joe King Oliver, Louis Armstrong, Roy Eldrige, Dizzy Gillespie și Don Cherry. Vastul său catalog interpretativ cuprinde cele mai variate stiluri, de la bebop, la cool jazz, modal jazz și - mai ales - fusion, stil la a cărui dezvoltare a avut un rol determinant. Cu "Birth Of The Cool" (1949-1950) inițiează trecerea de la improvizațiile aprinse, în genul lui Charlie Parker, către reluările reținute cu aranjamente reduse ale mijloacelor muzicale. Albumul "Kind Of Blue" (1959) reprezintă punctul de plecare al celor mai importante modificări structurale din jazz-ul modern, înlocuind funcția armonică cu accentuarea gamei melodice ca element fundamental în compoziție și interpretare. Albumul "Bitches Brew" (1969) deschide epoca stilului fusion, care reunește cele două modalități predominante ale anilor '60.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Ca interpret, Miles Davis, prin accentuarea fiecărui ton, se distanțează de virtuozitatea caracteristică a predecesorilor săi. Sunetul său clar, dinamic și perfect echilibrat devine model pentru mulți interpreți tineri, formația sa devenind o pepinieră a jazz-lui contemporan, din care s-au dezvoltat muzicieni de valoare ca John Coltrane, Bill Evans, Herbie Hanock și Keith Jarrett.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Miles Davis se naște dintr-o familie afro-americană, fiu al unui dentist din St. Louis. Mama sa, Cleo Henry, o pianistă talentată, ar fi dorit ca fiul ei să învețe vioara, dar, la aniversarea vârstei de 13 ani, tatăl său îi dăruiește o trompetă și Davis începe să studieze acest instrument cu un maestru local, Elwood Buchanan, un solist al orchestrei lui Andy Kirk. La vârsta de 15 ani, apare pentru prima dată în public cu grupul lui Eddie Randall. În 1945, după o scurtă colaborare cu Charlie Parker în grupul lui Billy Eckstine, pleacă la New York, unde obține o bursă de studiu la Julliard School of Music. Majoritatea timpului o petrece însă studiind stilurile lui Thelonious Monk, Coleman Hawkins și, în special, ale lui Charlie Parker și Dizzy Gillespie, în perioada stabilirii mișcării Bebop. Cu Charlie "Bird" Parker realizează în 1946 prima sa înregistrare, printre care "Now's The Time", care anticipă deja întoarcerea la melodie, tipică pentru stilul cool al perioadei imediat următoare.</font></p>
+	</div>
+		<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Miles_Davis">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="miles1.jpg">
+	<img class="mySlides" src="miles2.jpg">
+	<img class="mySlides" src="miles3.jpg">
+	<img class="mySlides" src="miles4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+			var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+		<a href="art.html"><img src="back.png" class="back"/></a>
+	</body>
+	</html>

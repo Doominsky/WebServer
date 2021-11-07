@@ -1,0 +1,62 @@
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Daft Punk</title>
+</head>
+<body background="m8.jpg" class="body">
+
+<h1 align="center"><font color="white" size="25px">Daft Punk</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text5" width="350">Origine</td>
+			<td class="text5" width="350">Ani de activitate</td>
+			<td class="text5" width="350">Membri</td>
+		</tr>
+		<tr height="auto">
+			<td class="text5" width="350">Paris, Franta</td>
+			<td class="text5" width="350">1993-prezent</td>
+			<td class="text5" width="350">Guy-Manuel de Homem-Christo,Thomas Bangalter</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Daft Punk este un duo francez de muzică electronică, format din muzicienii Guy-Manuel de Homem-Christo și Thomas Bangalter. Acest duo este considerat unul dintre cele mai de succes colaborări de muzică electronică din toate timpurile, atât în ceea ce privește vânzările de albume, cât și în lumea criticilor. Daft Punk este, de asemenea, creditat ca producătoare de melodii care au fost considerate esențiale în vechea scenă franceză.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Angalter și Homem-Christo au fost inițial pe scurt într-o trupă rock indie numită Darlin '. Când grupul s-a desființat, cei doi au inceput să experimenteze muzical cu mașini de tambur și sintetizatoare. Dupa 1997, duo-ul si-a lansat albumul de debut album "Homework" prin Virgin Records pentru recenzii extrem de pozitive si single-uri "Allround the World" si "Da Funk". Al doilea album Discovery al duo-ului a avut un succes mai mare, datorita lansarii single-urilor "One More Time", "Digital Love" si "Harder, Better, Faster, Stronger". În martie 2005, duo-ul a lansat al treilea album Human After All, la recenzii mixte. Cu toate acestea, single-urile "Robot Rock" și "Technologic" au obținut un succes considerabil în Regatul Unit.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Daft Punk a făcut turnee pe parcursul anului 2006 și 2007 și a lansat albumul live Alive 2007, care a câștigat un premiu Grammy pentru cel mai bun album electronic / dance. Dupa aceea, duo-ul a compus scorul pentru filmul Disney, Tron: Legacy, in 2010, si a lansat albumul sau in acelasi an. În ianuarie 2013, Daft Punk a părăsit Virgin pentru Columbia Records și a lansat cel de-al patrulea album Memories Random Access în 2013 la aprecierea critică la nivel mondial. Single-ul albumului "Get Lucky" a devenit un succes international, atingand topul celor 10 din 32 de tari. Random Access Memories a câștigat cinci premii Grammy în 2014, inclusiv Album of the Year și Record of the Year pentru "Get Lucky". În 2016, Daft Punk și-a câștigat primul număr pe Billboard Hot 100 cu piesa "Starboy", o colaborare cu The Weeknd.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Guy-Manuel de Homem-Christo și Thomas Bangalter s-au întâlnit în 1987, în timp ce au participat la Lycée Carnot, o școală secundară la Paris. Cei doi au devenit prieteni buni și mai târziu au înregistrat piese demo cu alții de la școală. Acest lucru a dus în cele din urmă la formarea unui grup bazat pe chitară, numit Darlin 'cu Laurent Brancowitz în 1992. Bangalter și Homem-Christo au cântat bas și chitară, în timp ce Brancowitz a fost adus la bord după ce cei doi au căutat un chitarist suplimentar. Trio-ul s-a marcat dupa piesa The Beach Boys cu acelasi nume, pe care le-au acoperit impreuna cu o compozitie originala. Stereolab a lansat ambele melodii pe un artist multiplu Duophonic Records EP și a invitat trupa să se deschidă pentru spectacolele de teatru în Regatul Unit. Bangalter a simțit că "lucrul pe care l-am făcut a fost destul de mediocru, cred că a fost atât de scurt, poate șase luni, patru melodii și două concerte și asta a fost." O revizuire negativă în Melody Maker de către Dave Jennings ulterior a numit muzica "a daft punky thrash". În loc să respingă recenzia, au găsit-o amuzantă. După cum a spus Homem-Christo, "Ne-am străduit atât de mult să găsim [numele] Darlin", și acest lucru sa întâmplat atât de repede ". Darlin s-a desființat în curând, lăsând pe Brancowitz să facă alte eforturi cu Phoenix. Bangalter și Homem-Christo au format Daft Punk și au experimentat cu mașini de tambur și sintetizatori</font></p>
+	</div>
+	<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Daft_Punk">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="daft1.jpg">
+	<img class="mySlides" src="daft2.jpg">
+	<img class="mySlides" src="daft3.jpg">
+	<img class="mySlides" src="daft4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+</body>
+</html>

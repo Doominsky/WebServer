@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Rick Astley</title>
+</head>
+<body background="m9.jpg" class="body">
+
+<h1 align="center"><font color="white" size="25px">Rick Astley</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text3" width="350">Genuri muzicale</td>
+			<td class="text3" width="350">Ocupatie</td>
+			<td class="text3" width="350">Instrumente</td>
+		</tr>
+		<tr height="auto">
+			<td class="text3" width="350">Blue-eyed soul, Dance</td>
+			<td class="text3" width="350">Cantaret, Prezentator de Radio, Muzician</td>
+			<td class="text3" width="350">Chitara, Voce</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Richard Paul "Rick" Astley (născut în 6 februarie 1966 în Newton-le-Willows, Lancashire, în zilele de astăzi Merseyside) este un cântăreț-compozitor/muzician de radio personalitate, de origine engleză. Astley este foarte cunoscut datorită piesei sale lansate în 1987 "Never Gonna Give You Up", care a fost un hit #1 în 25 de țări. Astley detine recordul pentru a fi singurul artist solo de sex masculin să aibă primele sale 8 singles ajunse în Top 10 în Marea Britanie, iar la retragerea sa, în 1993, vânduse aproximativ 40 de milioane înregistrări în întreaga lume.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Astley sa născut la 6 februarie 1966 la Newton-le-Willows din Lancashire, al patrulea copil al familiei sale. Părinții lui au divorțat când avea cinci ani, iar Astley a fost crescut de tatăl său. Cariera muzicala a inceput la varsta de 10 ani, cantand in corul bisericii locale. În timpul studiilor sale, Astley a cântat la tobe în cadrul unor trupe locale, unde sa întâlnit cu chitaristul David Morris. După ce a părăsit școala la șaisprezece ani, Astley a fost angajat în cursul zilei ca șofer al afacerii de grădinărit a tatălui său și a cantat la tobe noaptea în circuitul clubului de nord noaptea în trupe precum Give Way - specializată în acoperirea melodiilor Beatles și Shadows - și FBI, care a câștigat mai multe concursuri locale de talente.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; Primul său single a fost puținul cunoscut "When You Gonna", lansat ca o colaborare cu Lisa Carter, cu puțină promovare. Primul său solo a fost "Never Gonna Give Up", înregistrată în ziua de Anul Nou 1987 și lansată opt luni mai târziu, în august. Vocea bogată și profundă a lui Astley, combinată cu dansul pop, a făcut piesa un succes imediat, devenind cel mai bine vândut single. "Never Gonna Give You Up" a câștigat cel mai bun single britanic la premiile BPI din 1988 (acum numit Premiile BRIT), iar el a cântat în fața unui public global de 100 de milioane de spectatori.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp; În decembrie 1987, Astley a lansat un cover al clasicului "When I Fall In Love" Acest single este amintit in primul rand pentru un concurs strans de lupta pentru UK Christmas Number 1. Rivalii EMI, sperand sa vada actiunea lor, Pet Shop Boys ajunge la nr 1, fiind re-lansata versiunea de Nat King Cole. Acest lucru a condus la o încetinire a achizițiilor din versiunea lui Astley, permițând Pet Shop Boys să ajungă la primul loc râvnit, cu versiunea cover a "Always On My Mind".</font></p>
+	</div>
+	<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/Rick_Astley">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="rick1.jpg">
+	<img class="mySlides" src="rick2.jpg">
+	<img class="mySlides" src="rick3.jpg">
+	<img class="mySlides" src="rick4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+</body>
+</html>

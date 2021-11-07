@@ -1,0 +1,61 @@
+<html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>AC/DC</title>
+</head>
+<body background="m17.jpg" class="body">
+	<h1 align="center"><font color="white" size="25px">AC/DC</font></h1>
+<table border="1px" align="center" class="table">
+		<tr>
+			<td class="text7" width="350">Origine</td>
+			<td class="text7" width="350">Ani de activitate</td>
+			<td class="text7" width="350">Membri</td>
+		</tr>
+		<tr height="auto">
+			<td class="text7" width="350">Sidney, New South Wales, Australia</td>
+			<td class="text7" width="350">1973–prezent</td>
+			<td class="text7" width="350">Angus Young, Chris Slade, Stevie Young, Axl Rose</td>
+		</tr>
+	</table>
+	<div style="background-color:black; opacity:0.8">
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  AC/DC este o trupă rock din Australia formată în 1973 de frații Malcolm și Angus Young. O trupă hard rock/blues rock, ei au mai fost considerați și o trupă heavy metal, deși ei întotdeauna și-au numit muzica simplu "rock and roll". AC/DC a avut multe schimbări de formulă înainte să lanseze primul lor album, High Voltage, în 1975; Malcolm și Angus erau singurii membri originali rămași în trupă. Formula trupei s-a stabilizat până când basistul Mark Evans a fost înlocuit de Cliff Williams în 1977 pentru albumul Powerage. La câteva luni după începutul înregistrărilor pentru albumul Highway to Hell, vocalistul și unul din compozitorii trupei, Bon Scott, a murit pe 19 februarie 1980 după o noapte de consum excesiv de alcool. Grupul se gândea la destrămare, dar în urma susținerii din partea părinților lui Scott, au decis să continue și să găsească un nou vocalist. Fostul cântăreț al trupei Geordie, Brian Johnson a susținut audiții și a fost selectat să-l înlocuiască pe Scott. Mai târziu în acel an, trupa a lansat noul album, Back in Black, care era un tribut pentru Bon Scott. Albumul i-a adus pe noi culmi ale succesului și a devenit albumul trupei cu cele mai mari vânzări din toate timpurile.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Următorul lor album, For Those About to Rock We Salute You, a fost primul lor album pe prima poziție în Statele Unite. Toboșarul Phil Rudd a fost concediat în 1983 și înlocuit de ex-toboșarul trupei A II Z, Simon Wright, care i-a părăsit pentru Dio în 1989. Trupa a avut o revenire la începutul anilor '90 cu lansarea albumului The Razors Edge. Phil Rudd a revenit în 1994 după ce lui Chris Slade, care a fost în trupă din 1989 până în 1994, i s-a cerut să plece în favoarea lui, și a contribuit la albumul din 1995, Ballbreaker. Stiff Upper Lip, lansat în 2000, a fost bine primit de critici. Albumul de studio al trupei, Black Ice, lansat în 2008, a fost al doilea cel mai bine vândut album al anului, și cel mai bine clasat album al lor de la For Those About to Rock, eventual ajungând pe prima poziție pe toate clasamentele din jurul lumii.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Născuți în Scoția, frații George, Malcolm și Angus Young se stabilesc în Sydney, Australia, în 1963. George învață să cânte la chitară și formează una dintre cele mai de succes formații din Australia anilor 1960 - The Easybeats. Văzând succesul fratelui său mai mare, Malcolm Young pune bazele unei formații rock în noiembrie 1973. În trupă se mai aflau Colin Burgess la baterie și Larry Van Kriedt la bas, iar în urma unui anunț publicat în ziar este cooptat solistul vocal Dave Evans. Angus fiind încă la școală, Margret, sora lui îi sugerează să poarte uniforma sa școlară pe scenă, ceea ce între timp a devenit marca sa.</font></p>
+	<p align="justify"><font color="cyan" size="4px"><span style="background-color:black"/> &nbsp; &nbsp; &nbsp; &nbsp;  Observând talentul fratelui său mai mic, Malcolm îl alege drept chitarist principal pe Angus. O lună mai târziu formația este botezată AC/DC. Frații Angus și Malcolm Young susțin că ideea pentru numele trupei le-a venit văzând inscripția "AC/DC" pe o mașină de cusut a surorii lor, Margaret Young. "AC/DC" este o abreviere în limba engleză de la "Alternating Current/Direct Current" care apare de obicei pe transformatoarele redresoare din curent alternativ in curent continuu. Fraților le-a plăcut felul în care acest nume simbolizează energia muzicii și a spectacolelor formației.</font></p>
+	</div>
+		<p align="center"><font color="cyan" size="6px"><a href="https://en.wikipedia.org/wiki/AC/DC">Mai multe informații aici</a></font></p>
+	<div align="center">
+	<img class="mySlides" src="acdc1.jpg">
+	<img class="mySlides" src="acdc2.jpg">
+	<img class="mySlides" src="acdc3.jpg">
+	<img class="mySlides" src="acdc4.jpg">
+	<button class="w3-button-w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button-w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+	<script>
+			var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+	<a href="art.html"><img src="back.png" class="back"/></a>
+	</body>
+	</html>
