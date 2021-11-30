@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1638285704572" analysisTimestamp="1638285704338" release="">
+  <Project projectName="webserver">
+    <Jar>E:\Personal_Stuff\UNI\VVS\webserver\bin</Jar>
+    <AuxClasspathEntry>E:\Personal_Stuff\UNI\VVS\webserver\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Andrei\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Andrei\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <SrcDir>E:\Personal_Stuff\UNI\VVS\webserver\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="test.MainTest">
+      <SourceLine classname="test.MainTest" sourcefile="MainTest.java" sourcepath="test/MainTest.java"/>
+    </Class>
+    <Method classname="test.MainTest" name="testValidateaAbsoluteDirPath" signature="()V" isStatic="false">
+      <SourceLine classname="test.MainTest" start="43" end="44" startBytecode="0" endBytecode="4" sourcefile="MainTest.java" sourcepath="test/MainTest.java"/>
+    </Method>
+    <String value="C:/Users/Contacts/Desktop/" role="FILE_NAME"/>
+    <SourceLine classname="test.MainTest" start="43" end="43" startBytecode="4" endBytecode="4" sourcefile="MainTest.java" sourcepath="test/MainTest.java"/>
+    <SourceLine classname="test.MainTest" start="43" end="43" startBytecode="4" endBytecode="4" sourcefile="MainTest.java" sourcepath="test/MainTest.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="webserver.GUI">
+      <SourceLine classname="webserver.GUI" sourcefile="GUI.java" sourcepath="webserver/GUI.java"/>
+    </Class>
+    <Method classname="webserver.GUI" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="webserver.GUI" start="131" end="202" startBytecode="0" endBytecode="941" sourcefile="GUI.java" sourcepath="webserver/GUI.java"/>
+    </Method>
+    <SourceLine classname="webserver.GUI" start="144" end="144" startBytecode="125" endBytecode="125" sourcefile="GUI.java" sourcepath="webserver/GUI.java"/>
+    <SourceLine classname="webserver.GUI" start="144" end="144" startBytecode="125" endBytecode="125" sourcefile="GUI.java" sourcepath="webserver/GUI.java"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_LOOP" priority="1" rank="8" abbrev="IL" category="CORRECTNESS" first="1">
+    <Class classname="webserver.Main">
+      <SourceLine classname="webserver.Main" sourcefile="Main.java" sourcepath="webserver/Main.java"/>
+    </Class>
+    <Method classname="webserver.Main" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="webserver.Main" start="85" end="102" startBytecode="0" endBytecode="251" sourcefile="Main.java" sourcepath="webserver/Main.java"/>
+    </Method>
+    <SourceLine classname="webserver.Main" start="88" end="88" startBytecode="58" endBytecode="58" sourcefile="Main.java" sourcepath="webserver/Main.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="read" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="webserver.WebServer" start="33" end="43" startBytecode="0" endBytecode="205" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="38" end="38" startBytecode="32" endBytecode="32" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="38" end="38" startBytecode="32" endBytecode="32" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="101" end="128" startBytecode="0" endBytecode="398" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="104" end="104" startBytecode="25" endBytecode="25" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="104" end="104" startBytecode="25" endBytecode="25" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="sendResponse" signature="([Ljava/lang/String;Ljava/io/OutputStream;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="80" end="98" startBytecode="0" endBytecode="359" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="91" end="91" startBytecode="113" endBytecode="113" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="91" end="91" startBytecode="113" endBytecode="113" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="getResource" signature="(Ljava/lang/String;)[Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="46" end="77" startBytecode="0" endBytecode="454" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="69" end="69" startBytecode="193" endBytecode="193" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="69" end="69" startBytecode="193" endBytecode="193" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="101" end="128" startBytecode="0" endBytecode="398" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="126" end="126" startBytecode="142" endBytecode="142" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="126" end="126" startBytecode="142" endBytecode="142" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_EXIT" priority="2" rank="16" abbrev="Dm" category="BAD_PRACTICE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="sendResponse" signature="([Ljava/lang/String;Ljava/io/OutputStream;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="80" end="98" startBytecode="0" endBytecode="359" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="96" end="96" startBytecode="170" endBytecode="170" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="96" end="96" startBytecode="170" endBytecode="170" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="sendResponse" signature="([Ljava/lang/String;Ljava/io/OutputStream;)V" isStatic="false">
+      <SourceLine classname="webserver.WebServer" start="80" end="98" startBytecode="0" endBytecode="359" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <LocalVariable name="file" register="1" pc="14" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="webserver.WebServer" start="80" end="80" startBytecode="1" endBytecode="1" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    <SourceLine classname="webserver.WebServer" start="83" end="83" startBytecode="15" endBytecode="15" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+    <SourceLine classname="webserver.WebServer" start="83" end="83" startBytecode="15" endBytecode="15" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="webserver.WebServer">
+      <SourceLine classname="webserver.WebServer" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Class>
+    <Method classname="webserver.WebServer" name="read" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="webserver.WebServer" start="33" end="43" startBytecode="0" endBytecode="205" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+    </Method>
+    <SourceLine classname="webserver.WebServer" start="40" end="40" startBytecode="39" endBytecode="39" sourcefile="WebServer.java" sourcepath="webserver/WebServer.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 30 Nov 2021 16:52:31 +0200" total_classes="6" referenced_classes="8" total_bugs="11" total_size="448" num_packages="2" java_version="16.0.2" vm_version="16.0.2+7-67" cpu_seconds="9.80" clock_seconds="25.97" peak_mbytes="475.46" alloc_mbytes="2048.00" gc_seconds="0.02" priority_2="7" priority_1="4">
+    <PackageStats package="test" total_bugs="1" total_types="2" total_size="83" priority_2="1">
+      <ClassStats class="test.MainTest" sourceFile="MainTest.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="test.WebServerTest" sourceFile="WebServerTest.java" interface="false" size="52" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="webserver" total_bugs="10" total_types="4" total_size="365" priority_2="6" priority_1="4">
+      <ClassStats class="webserver.GUI" sourceFile="GUI.java" interface="false" size="183" bugs="1" priority_2="1"/>
+      <ClassStats class="webserver.Main" sourceFile="Main.java" interface="false" size="72" bugs="1" priority_1="1"/>
+      <ClassStats class="webserver.MyConstants" sourceFile="MyConstants.java" interface="true" size="35" bugs="0"/>
+      <ClassStats class="webserver.WebServer" sourceFile="WebServer.java" interface="false" size="75" bugs="8" priority_2="5" priority_1="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="35" invocations="2" avgMicrosecondsPerInvocation="17767" maxMicrosecondsPerInvocation="27999" standardDeviationMircosecondsPerInvocation="10232"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="17" invocations="42" avgMicrosecondsPerInvocation="426" maxMicrosecondsPerInvocation="9309" standardDeviationMircosecondsPerInvocation="1469"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="13" invocations="6" avgMicrosecondsPerInvocation="2326" maxMicrosecondsPerInvocation="6991" standardDeviationMircosecondsPerInvocation="2639"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="13" invocations="37" avgMicrosecondsPerInvocation="370" maxMicrosecondsPerInvocation="6695" standardDeviationMircosecondsPerInvocation="1142"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1638285704572" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
